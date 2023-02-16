@@ -1,13 +1,19 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
-import { Link } from '@builder.io/qwik-city';
+import { _Link } from "../route-file-generation/for-demo"
 
 export default component$(() => {
+
+  const testLinkString: RoutePath = "/organizations/Builder/team/"
+  testLinkString;
+
   return (
     <div>
       <h1>
         Welcome to Qwik <span class="lightning">⚡️</span>
       </h1>
+
+      <_Link href="/flower/"></_Link>
 
       <ul>
         <li>
@@ -138,12 +144,12 @@ export default component$(() => {
           </a>
         </li>
       </ul>
-      <Link class="mindblow" href="/flower/">
+      <_Link class="mindblow" href="/flower/">
         Blow my mind 🤯
-      </Link>
-      <Link class="todolist" href="/todolist/">
+      </_Link>
+      <_Link class="todolist" href="/todolist/">
         TODO demo 📝
-      </Link>
+      </_Link>
     </div>
   );
 });
