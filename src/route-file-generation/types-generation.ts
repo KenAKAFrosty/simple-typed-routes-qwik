@@ -1,7 +1,7 @@
 export const routesConfigDirectoryName = "typed-routing";
 
 export async function generateRoutes() {
-    console.log('generating routes')
+    console.log('Generating routes...')
     const fs = await import('fs');
     const path = await import('path');
     const dirName = path.join(process.cwd(), "src", routesConfigDirectoryName);

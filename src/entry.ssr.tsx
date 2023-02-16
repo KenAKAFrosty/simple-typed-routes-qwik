@@ -16,6 +16,7 @@ import { manifest } from '@qwik-client-manifest';
 import Root from './root';
 
 export default function (opts: RenderToStreamOptions) {
+  //I don't think this actually needs to be in entry.ssr. There's probably a better place for it deeper in the framework. 
   generateRoutes();
 
   return renderToStream(<Root />, {
